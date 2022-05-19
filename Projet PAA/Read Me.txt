@@ -1,0 +1,48 @@
+Projet PAA : Pirate
+
+Réalisé par : BAYO Kemokoba et PERINETTI Michel
+
+Environnement nécessaire : Un IDE (Intellij IDEA ou Eclipse).
+
+Technologies utilisées : Java
+
+Résumé du Projet : Réalisé un programme qui permet de gérer la distribution des ressources aux seins d’un bateau pirate. 
+
+Classe : 
+
+Pirate : Permet d’instancier les différents pirates aux seins du Navire.
+
+    Attribut : 
+    -objet : Numéro de l’objet souhaité en priorité par le Pirate.
+    -name : Nom du Pirate.
+-préférences : Tableau d’entier ranger du plus souhaité au moins souhaité par le pirate.
+
+Fonction : Toutes les fonctions Gest & Set qui vont permettrent d’obtenir certains attributs ou des les modifier.
+
+Navire : Permet d’instancier le bateau pirate qui va nous aider à gérer la distribution 
+
+    Attribut:
+    -nbpirates : Entier qui exprime le nombre de pirates au sein du bateau
+-relations : Matrice qui exprime les relations entre les pirates et qui nous permet de gérer l’aspect “jalousie” entre les différents pirates
+-pirates :  Liste de Pirate au sein du bateau
+-PirateName : Map entre les noms des pirates et l’ensembles ds entiers
+-ObjectName : Map entre la liste des objets et l’ensemble des entiers
+
+Fonctions :
+-addRelation: Fonctions qui prend en paramètres 2 String qui représente deux noms de pirates et qui va ajouter dans la matrice qui gère les relations un 1 afin de montrer si oui ou non 2 pirates sont jaloux l’un de l’autre ou pas.
+
+-swapObject : Fonctions qui prend en paramètres 2 String qui représente deux noms de pirates et celle-ci va permettre d’échanger l'objet qu'à récupérer chacun des deux pirates.
+
+-cout: Calcul le coût d’une solution actuelle
+
+-objectName: Fonctions qui à l'aide d’un entier retrouve le nom qui est lié cet entier au nom d’un pirate.
+
+-printSolution: Fonction qui affiche la solution obtenu
+
+-solutionNavire: Fonction qui calcule la solution d’un navire
+
+-isPirate: Fonction qui à l’aide d’une chaîne de caractères censé représenté le nom d’un Pirate retourne si vrai ou faux en fonction de si le Pirate fait oui ou non partie de l'équipage.
+
+-isObjext: Fonction qui à l’aide d’une chaîne de caractères censé représenté le nom d’un Objet retourne si vrai ou faux en fonction de si l’Objet existe ou non.
+
+-save: Fonction qui à l’aide d’une chaîne de caractères censé représenté le nom d’un chemin qui mène à un fichier, sauvegarde le résultat actuelle dans ce fichier.
